@@ -18,7 +18,7 @@
 | **Where I've done it** | **BDO** (Product Manager - Associate) · **Expenzing** (Product Specialist) · **Massey Services** (Product Analyst Co-op) |
 | **What I'm good at** | Turning dense domains like tax, procurement and field operations into specs engineers can build and metrics leadership can trust |
 | **Unfair advantage** | Engineering degree, and I ship working products with AI coding tools. Both projects below have a PRD, metrics plan and live demo |
-| **Right now** | MS in Information Systems at Northeastern, graduating **Dec 2026**. Looking for **PM / APM / Product Analyst** roles |
+| **Right now** | MS in Information Systems at Northeastern, graduating **Dec 2026**. Looking for **PM / AI PM / APM / Product Analyst / Business Analyst** roles |
 
 ## 📈 Impact dashboard
 
@@ -128,7 +128,7 @@
 <summary><b>What roles are you looking for?</b></summary>
 <br/>
 
-Full-time **Product Manager, Associate PM and Product Analyst** roles, especially B2B SaaS, fintech and AI products. I graduate in December 2026.
+Full-time **Product Manager, AI Product Manager, Associate PM, Product Analyst and Business Analyst** roles, especially B2B SaaS, fintech and AI products. I graduate in December 2026.
 </details>
 
 <details>
