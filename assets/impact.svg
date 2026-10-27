@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="Impact dashboard: $80K first-phase revenue, 42% weekly adoption of LLM features, 90% roadmap delivery, about 25% higher sales, 40+ discovery interviews, about 40% of procurement workflow automated, 95% client satisfaction, 0 of 7 planted fakes reached users.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#111a33"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .tile { fill: #131c38; stroke: #26335a; }
+      .num { font-size: 40px; font-weight: 800; letter-spacing: -1px; }
+      .lbl { font-size: 13.5px; fill: #c7cee6; }
+      .src { font-size: 10.5px; font-weight: 700; letter-spacing: 1.2px; fill: #7c89b0; }
+      .track { fill: #1e2a4a; }
+      @keyframes fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+      .bar { transform-box: fill-box; transform-origin: left; animation: fill 1.4s cubic-bezier(.2,.7,.2,1) both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+      .t { animation: rise .6s ease-out both; }
+      @media (prefers-reduced-motion: reduce) { .bar, .t { animation: none; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="400" rx="18" fill="url(#bg)"/>
+  <rect x=".5" y=".5" width="1199" height="399" rx="18" fill="none" stroke="#26335a"/>
+
+  <text x="32" y="44" class="mono" font-size="13" fill="#7c89b0">SELECT outcome FROM career WHERE verified = <tspan fill="#86efac">true</tspan>;</text>
+  <text x="1168" y="44" class="mono" font-size="13" fill="#7c89b0" text-anchor="end">8 rows · 0 vanity metrics</text>
+
+  <g class="sans">
+    <!-- row 1 -->
+    <g class="t" style="animation-delay:.05s">
+      <rect class="tile" x="32" y="64" width="268" height="150" rx="12"/>
+      <text class="src" x="52" y="92">BDO · 0→1 REVIVAL</text>
+      <text class="num" x="50" y="140" fill="#86efac">$80K</text>
+      <text class="lbl" x="52" y="166">first-phase revenue from a</text>
+      <text class="lbl" x="52" y="184">shelved Tax SaaS I brought back</text>
+      <rect class="track" x="52" y="198" width="228" height="4" rx="2"/>
+      <rect class="bar" x="52" y="198" width="228" height="4" rx="2" fill="#22c55e" style="animation-delay:.2s"/>
+    </g>
+    <g class="t" style="animation-delay:.15s">
+      <rect class="tile" x="316" y="64" width="268" height="150" rx="12"/>
+      <text class="src" x="336" y="92">BDO · AI PRODUCT</text>
+      <text class="num" x="334" y="140" fill="#a5b4fc">42%</text>
+      <text class="lbl" x="336" y="166">weekly adoption of 3 LLM</text>
+      <text class="lbl" x="336" y="184">features within 2 months</text>
+      <rect class="track" x="336" y="198" width="228" height="4" rx="2"/>
+      <rect class="bar" x="336" y="198" width="95.8" height="4" rx="2" fill="#818cf8" style="animation-delay:.3s"/>
+    </g>
+    <g class="t" style="animation-delay:.25s">
+      <rect class="tile" x="600" y="64" width="268" height="150" rx="12"/>
+      <text class="src" x="620" y="92">BDO · ROADMAPS</text>
+      <text class="num" x="618" y="140" fill="#fbbf24">90%</text>
+      <text class="lbl" x="620" y="166">of committed roadmap shipped</text>
+      <text class="lbl" x="620" y="184">across 5 Tax &amp; Finance SaaS</text>
+      <rect class="track" x="620" y="198" width="228" height="4" rx="2"/>
+      <rect class="bar" x="620" y="198" width="205.2" height="4" rx="2" fill="#fbbf24" style="animation-delay:.4s"/>
+    </g>
+    <g class="t" style="animation-delay:.35s">
+      <rect class="tile" x="884" y="64" width="284" height="150" rx="12"/>
+      <text class="src" x="904" y="92">MASSEY · FIELD PILOT</text>
+      <text class="num" x="902" y="140" fill="#f472b6">~25%</text>
+      <text class="lbl" x="904" y="166">higher sales with digital property</text>
+      <text class="lbl" x="904" y="184">graphing vs. the manual process</text>
+      <rect class="track" x="904" y="198" width="244" height="4" rx="2"/>
+      <rect class="bar" x="904" y="198" width="61" height="4" rx="2" fill="#f472b6" style="animation-delay:.5s"/>
+    </g>
+
+    <!-- row 2 -->
+    <g class="t" style="animation-delay:.45s">
+      <rect class="tile" x="32" y="228" width="268" height="150" rx="12"/>
+      <text class="src" x="52" y="256">BDO · DISCOVERY</text>
+      <text class="num" x="50" y="304" fill="#38bdf8">40+</text>
+      <text class="lbl" x="52" y="330">interviews with tax heads, firm</text>
+      <text class="lbl" x="52" y="348">partners and end users</text>
+      <rect class="track" x="52" y="362" width="228" height="4" rx="2"/>
+      <rect class="bar" x="52" y="362" width="228" height="4" rx="2" fill="#38bdf8" style="animation-delay:.6s"/>
+    </g>
+    <g class="t" style="animation-delay:.55s">
+      <rect class="tile" x="316" y="228" width="268" height="150" rx="12"/>
+      <text class="src" x="336" y="256">BDO · 0→1 AUTOMATION</text>
+      <text class="num" x="334" y="304" fill="#2dd4bf">~40%</text>
+      <text class="lbl" x="336" y="330">of procurement workflow automated</text>
+      <text class="lbl" x="336" y="348">by a vendor compliance MVP</text>
+      <rect class="track" x="336" y="362" width="228" height="4" rx="2"/>
+      <rect class="bar" x="336" y="362" width="91.2" height="4" rx="2" fill="#2dd4bf" style="animation-delay:.7s"/>
+    </g>
+    <g class="t" style="animation-delay:.65s">
+      <rect class="tile" x="600" y="228" width="268" height="150" rx="12"/>
+      <text class="src" x="620" y="256">EXPENZING · DELIVERY</text>
+      <text class="num" x="618" y="304" fill="#fb923c">95%</text>
+      <text class="lbl" x="620" y="330">client satisfaction across 25+</text>
+      <text class="lbl" x="620" y="348">change requests I delivered</text>
+      <rect class="track" x="620" y="362" width="228" height="4" rx="2"/>
+      <rect class="bar" x="620" y="362" width="216.6" height="4" rx="2" fill="#fb923c" style="animation-delay:.8s"/>
+    </g>
+    <g class="t" style="animation-delay:.75s">
+      <rect class="tile" x="884" y="228" width="284" height="150" rx="12"/>
+      <text class="src" x="904" y="256">SILLAGE · AI EVALS</text>
+      <text class="num" x="902" y="304" fill="#e6eaf5">0 / 7</text>
+      <text class="lbl" x="904" y="330">planted fake products or prices</text>
+      <text class="lbl" x="904" y="348">that got past my agent to users</text>
+      <rect class="track" x="904" y="362" width="244" height="4" rx="2"/>
+      <rect class="bar" x="904" y="362" width="244" height="4" rx="2" fill="#e6eaf5" style="animation-delay:.9s"/>
+    </g>
+  </g>
+</svg>

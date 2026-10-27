@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-label="Terminal: git commit -m 'feat: add a PM who ships to your team'. Result: 1 PM added, 0 conflicts. Ready to merge.">
+  <defs>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 17px; }
+      @keyframes show { 0%, 36% { opacity: 0; } 40%, 100% { opacity: 1; } }
+      @keyframes show2 { 0%, 46% { opacity: 0; } 50%, 100% { opacity: 1; } }
+      .l2 { animation: show 7s linear infinite; }
+      .l3 { animation: show2 7s linear infinite; }
+      @media (prefers-reduced-motion: reduce) { .l2, .l3 { animation: none; } }
+    </style>
+    <clipPath id="clip"><rect x="40" y="66" width="820" height="30"><animate attributeName="width" values="0;820;820" keyTimes="0;0.3;1" dur="7s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+  <rect width="1200" height="190" rx="18" fill="#0b1020"/>
+  <rect x=".5" y=".5" width="1199" height="189" rx="18" fill="none" stroke="#26335a"/>
+  <circle cx="34" cy="30" r="6" fill="#f87171"/>
+  <circle cx="54" cy="30" r="6" fill="#fbbf24"/>
+  <circle cx="74" cy="30" r="6" fill="#22c55e"/>
+  <text x="600" y="35" class="mono" font-size="13" fill="#7c89b0" text-anchor="middle" style="font-size:13px">your-product-team — zsh</text>
+
+  <g class="mono">
+    <text x="40" y="88" fill="#e6eaf5" clip-path="url(#clip)"><tspan fill="#22c55e">➜</tspan> <tspan fill="#a5b4fc">~/your-team</tspan> git commit -m "feat: add a PM who ships"</text>
+    <text class="l2" x="40" y="122" fill="#86efac">[main 2c0ffee] 1 PM added · 0 conflicts · roadmap +1 owner</text>
+    <text class="l3" x="40" y="156" fill="#7c89b0">Ready to merge. Reviewer requested: <tspan fill="#fbbf24">you</tspan>  → adityahasija.vercel.app</text>
+  </g>
+</svg>

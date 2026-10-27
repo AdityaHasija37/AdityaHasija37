@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-label="Aditya Hasija, Product Manager. A kanban board where the ticket 'Hire Aditya' moves from Backlog to Shipped.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#111a33"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#a5b4fc"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#1e2a4a" stroke-width="1"/>
+    </pattern>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+      .col { fill: #0f1730; stroke: #243154; stroke-width: 1; }
+      .colh { font-size: 11px; letter-spacing: 1.5px; font-weight: 700; fill: #7c89b0; }
+      .card { fill: #16203d; stroke: #2c3a63; stroke-width: 1; }
+      .ct { font-size: 12.5px; fill: #e6eaf5; font-weight: 600; }
+      .cs { font-size: 11px; fill: #8b97bd; }
+      .tag { font-size: 10px; font-weight: 700; }
+
+      @keyframes pulse { 0%,100% { opacity: 1; r: 5px; } 50% { opacity: .35; r: 7px; } }
+      .dot { animation: pulse 1.8s ease-in-out infinite; }
+
+      @keyframes move {
+        0%, 18%   { transform: translate(0px, 0px); }
+        28%, 48%  { transform: translate(167px, 68px); }
+        58%, 92%  { transform: translate(334px, 204px); }
+        97%, 100% { transform: translate(334px, 204px); opacity: 0; }
+      }
+      .mover { animation: move 9s cubic-bezier(.65,0,.35,1) infinite; }
+
+      @keyframes border {
+        0%, 52%  { stroke: #6366f1; }
+        58%, 100% { stroke: #22c55e; }
+      }
+      .moverCard { fill: #1d2750; stroke-width: 2; animation: border 9s linear infinite; }
+
+      @keyframes stage1 { 0%,22% { opacity: 1; } 24%,100% { opacity: 0; } }
+      @keyframes stage2 { 0%,22% { opacity: 0; } 24%,54% { opacity: 1; } 56%,100% { opacity: 0; } }
+      @keyframes stage3 { 0%,54% { opacity: 0; } 56%,100% { opacity: 1; } }
+      .s1 { animation: stage1 9s linear infinite; }
+      .s2 { animation: stage2 9s linear infinite; }
+      .s3 { animation: stage3 9s linear infinite; }
+
+      @keyframes blink { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+      .cursor { animation: blink 1s step-end infinite; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .mover, .moverCard, .s1, .s2, .s3, .dot, .cursor { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="440" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="440" rx="18" fill="url(#grid)" opacity=".55"/>
+  <rect x=".5" y=".5" width="1199" height="439" rx="18" fill="none" stroke="#26335a"/>
+
+  <!-- left: the pitch -->
+  <g class="mono" font-size="13" fill="#7c89b0">
+    <text x="56" y="70">~/product/<tspan fill="#a5b4fc">aditya-hasija</tspan>  ·  PRD v4.0  ·  status: <tspan fill="#22c55e" font-weight="700">SHIPPING</tspan></text>
+  </g>
+
+  <text x="52" y="150" class="sans" font-size="66" font-weight="800" fill="url(#name)" letter-spacing="-1.5">Aditya Hasija</text>
+
+  <g class="sans" fill="#c7cee6">
+    <text x="56" y="196" font-size="22" font-weight="600" fill="#e6eaf5">Product Manager. I take messy problems</text>
+    <text x="56" y="226" font-size="22" font-weight="600" fill="#e6eaf5">from discovery to shipped, measured product.</text>
+    <text x="56" y="270" font-size="15" fill="#8b97bd">3+ years in B2B SaaS, fintech and field ops · BDO · Expenzing · Massey</text>
+    <text x="56" y="294" font-size="15" fill="#8b97bd">MS Information Systems, Northeastern University · graduating Dec 2026</text>
+  </g>
+
+  <!-- status pill -->
+  <g transform="translate(56 330)">
+    <rect width="318" height="40" rx="20" fill="#0f2a1d" stroke="#1f6b43"/>
+    <circle class="dot" cx="24" cy="20" r="5" fill="#22c55e"/>
+    <text x="42" y="25.5" class="sans" font-size="14.5" font-weight="700" fill="#86efac">Open to full-time PM roles</text>
+  </g>
+  <text x="56" y="404" class="mono" font-size="13" fill="#7c89b0">$ ./hire --role=product<tspan class="cursor" fill="#a5b4fc">▍</tspan></text>
+
+  <!-- right: kanban -->
+  <g class="mono">
+    <rect class="col" x="652" y="44" width="160" height="356" rx="12"/>
+    <rect class="col" x="819" y="44" width="160" height="356" rx="12"/>
+    <rect class="col" x="986" y="44" width="170" height="356" rx="12"/>
+    <text class="colh" x="668" y="70">BACKLOG</text>
+    <text class="colh" x="835" y="70">IN PROGRESS</text>
+    <text class="colh" x="1002" y="70">SHIPPED ✓</text>
+  </g>
+
+  <g class="sans">
+    <!-- in progress: static -->
+    <rect class="card" x="827" y="86" width="144" height="58" rx="8"/>
+    <text class="ct" x="839" y="108">MS @ Northeastern</text>
+    <text class="cs" x="839" y="128">ETA Dec 2026</text>
+
+    <!-- shipped: static -->
+    <rect class="card" x="994" y="86" width="154" height="58" rx="8"/>
+    <text class="ct" x="1006" y="108">Revived Tax SaaS</text>
+    <text class="cs" x="1006" y="128"><tspan fill="#86efac">$80K</tspan> first-phase rev</text>
+
+    <rect class="card" x="994" y="154" width="154" height="58" rx="8"/>
+    <text class="ct" x="1006" y="176">3 LLM features</text>
+    <text class="cs" x="1006" y="196"><tspan fill="#86efac">42%</tspan> weekly adoption</text>
+
+    <rect class="card" x="994" y="222" width="154" height="58" rx="8"/>
+    <text class="ct" x="1006" y="244">Graphing pilot</text>
+    <text class="cs" x="1006" y="264"><tspan fill="#86efac">~25%</tspan> higher sales</text>
+
+    <!-- the moving ticket -->
+    <g class="mover">
+      <rect class="moverCard" x="660" y="86" width="144" height="58" rx="8"/>
+      <text class="ct" x="672" y="108">PM-001 Hire Aditya</text>
+      <text class="tag s1" x="672" y="129" fill="#a5b4fc">● P0 · ready for you</text>
+      <text class="tag s2" x="672" y="129" fill="#fbbf24">● interviewing…</text>
+      <text class="tag s3" x="672" y="129" fill="#22c55e">✓ shipped to your team</text>
+    </g>
+  </g>
+</svg>
